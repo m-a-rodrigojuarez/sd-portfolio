@@ -10,8 +10,9 @@
     --white: #ffffff;
     --cloudless: #dbe7ff;
     --shadow: 0 22px 60px rgba(8, 11, 18, 0.16);
-    --page-gutter: clamp(20px, 5vw, 64px);
-    --content-max: 1120px;
+    --page-gutter: clamp(20px, 4vw, 56px);
+    --content-max: 1840px;
+    --reading-max: 1180px;
     --section-y: 96px;
 }
 
@@ -270,8 +271,8 @@ a {
 
 .about-section {
     display: grid;
-    grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
-    gap: clamp(36px, 7vw, 92px);
+    grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+    gap: clamp(28px, 5vw, 64px);
     align-items: start;
 }
 
@@ -279,7 +280,8 @@ a {
     position: sticky;
     top: 112px;
     display: grid;
-    min-height: 560px;
+    width: min(100%, 280px);
+    min-height: 280px;
     place-items: center;
     overflow: hidden;
     border: 1px solid var(--line);
@@ -294,7 +296,7 @@ a {
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 560px;
+    min-height: 280px;
     object-fit: cover;
     object-position: center 35%;
 }
@@ -315,22 +317,47 @@ a {
 }
 
 .about-copy p {
+    max-width: var(--reading-max);
     margin: 0;
 }
 
 .credentials-section {
+    position: relative;
     display: grid;
+    width: 100%;
+    max-width: none;
     gap: 42px;
+    margin: 0;
+    padding: var(--section-y) var(--page-gutter);
+    overflow: hidden;
     background:
-        radial-gradient(circle at 100% 0%, rgba(78, 161, 255, 0.12), transparent 28%),
-        #f6f9fd;
+        radial-gradient(circle at right top, rgba(78, 161, 255, 0.13) 0 260px, transparent 262px),
+        linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
+}
+
+.credentials-section::before,
+.portfolio-close-section::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: clamp(24px, 7vw, 120px);
+    width: 360px;
+    height: 108px;
+    opacity: 0.32;
+    background-image: radial-gradient(circle, #1f6feb 0 5px, transparent 6px);
+    background-size: 34px 34px;
+    pointer-events: none;
 }
 
 .credentials-header {
+    position: relative;
+    z-index: 1;
     display: grid;
-    grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.8fr);
-    gap: clamp(28px, 6vw, 78px);
-    align-items: end;
+    width: min(var(--content-max), 100%);
+    gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: start;
 }
 
 .credentials-header h2 {
@@ -339,16 +366,22 @@ a {
 }
 
 .credentials-header p:last-child {
+    max-width: var(--reading-max);
     margin: 0;
     color: var(--muted);
-    font-size: clamp(1rem, 1.45vw, 1.18rem);
-    line-height: 1.58;
+    font-size: clamp(1.08rem, 1.7vw, 1.38rem);
+    line-height: 1.46;
 }
 
 .credentials-board {
+    position: relative;
+    z-index: 1;
     display: grid;
+    width: min(var(--content-max), 100%);
     grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
     gap: 22px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .credential-panel {
@@ -508,7 +541,7 @@ a {
 }
 
 .overview-header {
-    max-width: 850px;
+    max-width: none;
 }
 
 .overview-header .section-kicker {
@@ -538,12 +571,12 @@ a {
     margin-top: 62px;
     margin-bottom: 54px;
     color: var(--ink);
-    font-size: clamp(1.18rem, 2vw, 1.62rem);
-    line-height: 1.35;
+    font-size: clamp(1.08rem, 1.7vw, 1.38rem);
+    line-height: 1.46;
 }
 
 .overview-copy p {
-    max-width: 1000px;
+    max-width: var(--reading-max);
     margin: 0;
 }
 
@@ -2189,19 +2222,25 @@ a {
 }
 
 .portfolio-close-section {
+    position: relative;
     display: grid;
     width: 100%;
     max-width: none;
     gap: 44px;
     margin: 0;
     padding: var(--section-y) var(--page-gutter);
-    background: #f4f7fc;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at right top, rgba(78, 161, 255, 0.13) 0 260px, transparent 262px),
+        linear-gradient(180deg, #ffffff 0%, var(--paper) 100%);
 }
 
 .portfolio-close-header {
+    position: relative;
+    z-index: 1;
     display: grid;
     width: min(var(--content-max), 100%);
-    max-width: 1120px;
+    max-width: none;
     gap: 24px;
     margin-right: auto;
     margin-left: auto;
@@ -2209,6 +2248,8 @@ a {
 
 .closing-grid,
 .closing-cta {
+    position: relative;
+    z-index: 1;
     width: min(var(--content-max), 100%);
     margin-right: auto;
     margin-left: auto;
@@ -2223,7 +2264,7 @@ a {
 }
 
 .portfolio-close-header p:last-child {
-    max-width: 880px;
+    max-width: var(--reading-max);
     margin: 0;
     color: var(--muted);
     font-size: clamp(1.08rem, 1.7vw, 1.38rem);
@@ -2380,7 +2421,8 @@ a {
     .about-photo {
         position: relative;
         top: auto;
-        min-height: 420px;
+        width: min(100%, 280px);
+        min-height: 280px;
     }
 
     .hero-stats article+article {
@@ -2392,7 +2434,9 @@ a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .research-overview::before {
+    .research-overview::before,
+    .credentials-section::before,
+    .portfolio-close-section::before {
         right: -90px;
         opacity: 0.18;
     }
@@ -2532,7 +2576,8 @@ a {
 
 
     .about-photo {
-        min-height: 320px;
+        width: min(100%, 240px);
+        min-height: 240px;
         border-radius: 18px;
     }
 
