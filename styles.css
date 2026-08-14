@@ -678,7 +678,7 @@ a {
 
 .case-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 22px;
 }
 
@@ -2108,6 +2108,129 @@ a {
     filter: saturate(1.04) contrast(1.05);
 }
 
+.booking-impact-band {
+    display: grid;
+    width: min(var(--content-max), calc(100% - (var(--page-gutter) * 2)));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    margin: 0 auto var(--section-y);
+    overflow: hidden;
+    border-radius: 8px;
+    background: #1d2a3c;
+}
+
+.booking-impact-band article {
+    min-height: 170px;
+    padding: 24px;
+    background: #07111f;
+    color: #ffffff;
+}
+
+.booking-impact-band strong {
+    display: block;
+    color: #4ea1ff;
+    font-size: clamp(1.8rem, 3.4vw, 3.4rem);
+    line-height: 0.95;
+}
+
+.booking-impact-band span {
+    display: block;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.92rem;
+    line-height: 1.35;
+}
+
+.morralla-layout {
+    grid-template-columns: minmax(420px, 0.82fr) minmax(540px, 1fr);
+    padding-top: 34px;
+}
+
+.morralla-evidence {
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.morralla-case-page .case-evidence>section:last-child {
+    margin-top: 0;
+}
+
+.cash-flow-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.cash-flow-grid article {
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fbfdff;
+}
+
+.cash-flow-label {
+    display: inline-flex;
+    color: var(--teal);
+    font-size: 0.76rem;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.cash-flow-grid ol {
+    display: grid;
+    gap: 10px;
+    margin: 14px 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: cash-flow-step;
+}
+
+.cash-flow-grid li {
+    position: relative;
+    min-height: 34px;
+    padding-left: 42px;
+    color: var(--ink);
+    font-size: 0.88rem;
+    font-weight: 800;
+    line-height: 1.22;
+    counter-increment: cash-flow-step;
+}
+
+.cash-flow-grid li::before {
+    content: counter(cash-flow-step);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: grid;
+    width: 28px;
+    height: 28px;
+    place-items: center;
+    border-radius: 999px;
+    background: #edf4ff;
+    color: var(--teal);
+    font-size: 0.72rem;
+    font-weight: 950;
+}
+
+.cash-flow-grid li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 13px;
+    width: 2px;
+    height: 18px;
+    background: rgba(31, 111, 235, 0.22);
+}
+
+.morralla-friction-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.morralla-outputs-card .impact-result-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .booking-layout {
     grid-template-columns: minmax(360px, 0.68fr) minmax(560px, 1fr);
     gap: clamp(28px, 4vw, 52px);
@@ -2349,6 +2472,16 @@ a {
     font-weight: 700;
 }
 
+@media (max-width: 1180px) {
+    .case-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-impact-band {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 900px) {
     :root {
         --section-y: 84px;
@@ -2520,9 +2653,19 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .morralla-layout,
+    .cash-flow-grid {
+        grid-template-columns: 1fr;
+    }
+
     .booking-finding-grid,
+    .booking-impact-band,
     .booking-metric-grid {
         grid-template-columns: 1fr;
+    }
+
+    .booking-impact-band article {
+        min-height: auto;
     }
 
 }
