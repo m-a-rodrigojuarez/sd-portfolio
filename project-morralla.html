@@ -18,14 +18,11 @@
       <section class="booking-hero morralla-hero">
         <div class="booking-hero-copy">
           <p class="project-label">Walmart · Service Design</p>
-          <h1>Structuring Walmart's Store Cash Logistics</h1>
+          <h1>Creating a common way of working for store cash management</h1>
           <span class="title-rule" aria-hidden="true"></span>
           <p class="booking-hero-subtitle">
-            Service blueprinting and requirements definition for Treasury Operations at scale
-          </p>
-          <p>
-            We mapped how cash moved between SuperCenter stores, transport providers, and the bank to turn inconsistent
-            manual routines into documented, auditable operating flows.
+            Turning fragmented store practices into a traceable operating model and creating the foundation for future
+            digitalization.
           </p>
         </div>
 
@@ -34,174 +31,487 @@
         </div>
       </section>
 
-      <section class="case-layout morralla-layout" aria-label="Store cash logistics case study details">
-        <div class="case-narrative">
-          <article class="case-row">
-            <span class="case-row-number">01</span>
-            <div>
-              <h2>Context</h2>
-              <p>
-                Walmart's Treasury Operations team wanted to reduce the uncertainty around how SuperCenter stores
-                handled physical cash, from the moment it entered the register to the moment it reached the bank vault,
-                and back. This work was part of a broader initiative, internally known as Show Me the Money, split into
-                two complementary flows: cash leaving the store to be deposited at the bank, and cash arriving at the
-                store from the bank to fund daily operations.
-              </p>
+      <section class="morralla-challenge-section" aria-labelledby="morralla-challenge-title">
+        <div class="morralla-challenge-copy">
+          <div class="scaling-section-kicker">
+            <span>01</span>
+            <p>The challenge</p>
+          </div>
+          <h2 id="morralla-challenge-title">
+            An internal Treasury audit had uncovered recurring problems in how cash moved from registers to the bank.
+          </h2>
+        </div>
+
+        <div class="cash-handoff-panel">
+          <h3>A complex service with multiple handoffs</h3>
+          <div class="cash-handoff-flow" aria-label="Cash handoff flow from registers to the bank">
+            <article>
+              <span class="cash-handoff-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <path d="M13 19h30v24H13z" />
+                  <path d="M19 19v-7h18v7" />
+                  <path d="M20 34h5M31 34h5M23 28h10" />
+                </svg>
+              </span>
+              <div>
+                <h4>Registers</h4>
+                <p>Cash is collected at checkout</p>
+              </div>
+            </article>
+            <span class="cash-handoff-arrow" aria-hidden="true">→</span>
+            <article>
+              <span class="cash-handoff-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <circle cx="28" cy="18" r="9" />
+                  <path d="M12 48c2.3-9.8 8-15 16-15s13.7 5.2 16 15" />
+                </svg>
+              </span>
+              <div>
+                <h4>Store management</h4>
+                <p>Submanager or manager prepares the handoff</p>
+              </div>
+            </article>
+            <span class="cash-handoff-arrow" aria-hidden="true">→</span>
+            <article>
+              <span class="cash-handoff-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <path d="M8 34V20h27v20H8z" />
+                  <path d="M35 27h7l6 7v6H35V27z" />
+                  <circle cx="18" cy="41" r="4" />
+                  <circle cx="42" cy="41" r="4" />
+                </svg>
+              </span>
+              <div>
+                <h4>Cash-in-transit</h4>
+                <p>Provider picks up the cash</p>
+              </div>
+            </article>
+            <span class="cash-handoff-arrow" aria-hidden="true">→</span>
+            <article>
+              <span class="cash-handoff-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <path d="M8 24h40L28 10 8 24z" />
+                  <path d="M14 24v20M24 24v20M34 24v20M44 24v20M10 44h36" />
+                </svg>
+              </span>
+              <div>
+                <h4>Bank</h4>
+                <p>Cash is deposited</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="cash-risk-band" aria-label="Audit risks and operational frictions">
+            <article>
+              <span class="cash-risk-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M24 7 43 40H5L24 7z" />
+                  <path d="M24 18v11" />
+                  <path d="M24 35h.01" />
+                </svg>
+              </span>
+              <p>Errors</p>
+            </article>
+            <article>
+              <span class="cash-risk-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M14 6h14l8 8v28H14z" />
+                  <path d="M28 6v9h8" />
+                  <path d="M19 25h10" />
+                  <path d="M19 31h7" />
+                </svg>
+              </span>
+              <p>Reconciliation efforts</p>
+            </article>
+            <article>
+              <span class="cash-risk-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <ellipse cx="18" cy="14" rx="10" ry="4" />
+                  <path d="M8 14v12c0 2.2 4.5 4 10 4s10-1.8 10-4V14" />
+                  <path d="M8 20c0 2.2 4.5 4 10 4s10-1.8 10-4" />
+                  <ellipse cx="31" cy="24" rx="10" ry="4" />
+                  <path d="M21 24v10c0 2.2 4.5 4 10 4s10-1.8 10-4V24" />
+                  <path d="M21 30c0 2.2 4.5 4 10 4s10-1.8 10-4" />
+                </svg>
+              </span>
+              <p>Losses</p>
+            </article>
+            <article>
+              <span class="cash-risk-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <circle cx="24" cy="24" r="16" />
+                  <path d="M24 14v11l7 5" />
+                </svg>
+              </span>
+              <p>Time spent on investigations</p>
+            </article>
+            <article>
+              <span class="cash-risk-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M24 7 43 40H5L24 7z" />
+                  <path d="M24 18v11" />
+                  <path d="M24 35h.01" />
+                </svg>
+              </span>
+              <p>Risk</p>
+            </article>
+            <article>
+              <span class="cash-risk-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M4 24s7-11 20-11 20 11 20 11-7 11-20 11S4 24 4 24z" />
+                  <circle cx="24" cy="24" r="5" />
+                  <path d="M8 40 40 8" />
+                </svg>
+              </span>
+              <p>Limited traceability</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="morralla-as-is-section" aria-labelledby="morralla-as-is-title">
+        <div class="morralla-as-is-copy">
+          <div class="scaling-section-kicker">
+            <span>02</span>
+            <p>Understanding the As-Is</p>
+          </div>
+          <h2 id="morralla-as-is-title">Stores had created their own safety nets.</h2>
+          <p>
+            Without a company-wide way of working, stores had developed their own controls to reduce mistakes and keep
+            track of cash movements.
+          </p>
+        </div>
+
+        <div class="store-controls-panel">
+          <h3>Different tools. Same underlying need.</h3>
+          <div class="store-control-grid" aria-label="Local control artifacts found across stores">
+            <article class="store-control-card">
+              <div class="store-control-visual">
+                <img src="assets/morralla-excel-example.png" alt="" />
+                <span>Store A</span>
+              </div>
+              <div class="store-control-label">
+                <span class="artifact-icon excel-icon" aria-hidden="true">X</span>
+                <p>Excel files</p>
+              </div>
+            </article>
+
+            <article class="store-control-card">
+              <div class="store-control-visual">
+                <img src="assets/morralla-notebook-example.png" alt="" />
+                <span>Store B</span>
+              </div>
+              <div class="store-control-label">
+                <span class="artifact-icon document-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path d="M13 6h15l8 8v28H13z" />
+                    <path d="M28 6v9h8" />
+                    <path d="M18 24h13M18 30h13M18 36h8" />
+                  </svg>
+                </span>
+                <p>Notebooks</p>
+              </div>
+            </article>
+
+            <article class="store-control-card">
+              <div class="store-control-visual">
+                <img src="assets/morralla-paper-record-example.png" alt="" />
+                <span>Store C</span>
+              </div>
+              <div class="store-control-label">
+                <span class="artifact-icon document-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" role="img">
+                    <path d="M13 6h15l8 8v28H13z" />
+                    <path d="M28 6v9h8" />
+                    <path d="M18 24h13M18 30h13M18 36h8" />
+                  </svg>
+                </span>
+                <p>Paper records</p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="store-control-quote">
+            <span aria-hidden="true">“</span>
+            <p>
+              Local controls reduced risk within individual stores, but created fragmented records and limited
+              traceability across the operation.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="morralla-role-section" aria-labelledby="morralla-role-title">
+        <div class="morralla-role-copy">
+          <div class="scaling-section-kicker">
+            <span>03</span>
+            <p>My role</p>
+          </div>
+          <h2 id="morralla-role-title">From understanding the system to designing a common way of working.</h2>
+        </div>
+
+        <div class="morralla-process-panel">
+          <h3>A collaborative and iterative process</h3>
+          <div class="morralla-process-flow" aria-label="Research and service design process">
+            <article>
+              <span class="morralla-process-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <circle cx="24" cy="24" r="14" />
+                  <path d="M34 34l12 12" />
+                </svg>
+              </span>
+              <h4>Map</h4>
+              <p>Understand the actual process</p>
+            </article>
+            <span class="morralla-process-arrow" aria-hidden="true">→</span>
+            <article>
+              <span class="morralla-process-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <path d="M12 42h8V28h-8z" />
+                  <path d="M24 42h8V20h-8z" />
+                  <path d="M36 42h8V12h-8z" />
+                </svg>
+              </span>
+              <h4>Prioritize</h4>
+              <p>Identify and prioritize UX + business gaps</p>
+            </article>
+            <span class="morralla-process-arrow" aria-hidden="true">→</span>
+            <article>
+              <span class="morralla-process-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <circle cx="21" cy="20" r="7" />
+                  <circle cx="35" cy="20" r="7" />
+                  <path d="M9 44c1.6-7.7 6-12 12-12s10.4 4.3 12 12" />
+                  <path d="M27 35c2-2 4.6-3 8-3 6 0 10.4 4.3 12 12" />
+                </svg>
+              </span>
+              <h4>Co-design</h4>
+              <p>Work with store staff, Treasury and other stakeholders</p>
+            </article>
+            <span class="morralla-process-arrow" aria-hidden="true">→</span>
+            <article>
+              <span class="morralla-process-icon" aria-hidden="true">
+                <svg viewBox="0 0 56 56" role="img">
+                  <circle cx="28" cy="28" r="7" />
+                  <path d="M28 6v8M28 42v8M6 28h8M42 28h8" />
+                  <path d="M12.4 12.4l5.6 5.6M38 38l5.6 5.6M43.6 12.4 38 18M18 38l-5.6 5.6" />
+                  <circle cx="28" cy="28" r="18" />
+                </svg>
+              </span>
+              <h4>Define</h4>
+              <p>Common way of working and required system changes (e.g. SAP)</p>
+            </article>
+          </div>
+
+          <article class="approach-role-note morralla-role-note">
+            <div class="approach-role-icon" aria-hidden="true">
+              <svg viewBox="0 0 56 56" role="img">
+                <circle cx="28" cy="18" r="9" />
+                <path d="M12 48c2.3-9.8 8-15 16-15s13.7 5.2 16 15" />
+              </svg>
+            </div>
+            <p>
+              Managed the workstream with Treasury, aligned initiatives and timelines, and supported research readouts
+              and stakeholder discussions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="morralla-to-be-section" aria-labelledby="morralla-to-be-title">
+        <div class="morralla-to-be-copy">
+          <div class="scaling-section-kicker">
+            <span>04</span>
+            <p>Designing the To-Be</p>
+          </div>
+          <h2 id="morralla-to-be-title">From local controls to a traceable service.</h2>
+        </div>
+
+        <div class="to-be-comparison" aria-label="As-Is and To-Be cash management comparison">
+          <article class="to-be-card as-is-card">
+            <header>
+              <h3>As-Is</h3>
+              <p>Fragmented and manual</p>
+            </header>
+            <div class="to-be-flow">
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <path d="M13 19h30v24H13z" />
+                    <path d="M19 19v-7h18v7" />
+                    <path d="M20 34h5M31 34h5M23 28h10" />
+                  </svg>
+                </span>
+                <p>Registers</p>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <circle cx="28" cy="18" r="9" />
+                    <path d="M12 48c2.3-9.8 8-15 16-15s13.7 5.2 16 15" />
+                  </svg>
+                </span>
+                <p>Store management</p>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <path d="M8 34V20h27v20H8z" />
+                    <path d="M35 27h7l6 7v6H35V27z" />
+                    <circle cx="18" cy="41" r="4" />
+                    <circle cx="42" cy="41" r="4" />
+                  </svg>
+                </span>
+                <p>Cash-in-transit</p>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <path d="M8 24h40L28 10 8 24z" />
+                    <path d="M14 24v20M24 24v20M34 24v20M44 24v20M10 44h36" />
+                  </svg>
+                </span>
+                <p>Bank</p>
+              </div>
+            </div>
+            <div class="to-be-tags as-is-tags">
+              <span>Different tools and records</span>
+              <span>Variations by store</span>
+              <span>Manual handoffs</span>
+              <span>Hard to investigate</span>
             </div>
           </article>
 
-          <article class="case-row">
-            <span class="case-row-number">02</span>
-            <div>
-              <h2>Problem</h2>
-              <p>
-                Neither flow had a standardized process. Steps varied store by store, depended heavily on physical
-                paperwork, and were executed manually with no shared source of truth between store managers, cash
-                transport providers, and the bank. That variability made it difficult for Treasury to forecast, audit,
-                or trust the cash-handling process at scale.
-              </p>
-            </div>
-          </article>
+          <span class="to-be-main-arrow" aria-hidden="true">→</span>
 
-          <article class="case-row">
-            <span class="case-row-number">03</span>
-            <div>
-              <h2>My role</h2>
-              <p>
-                I led the UX research and service design workstream, managing a researcher and a contractor service
-                designer, and worked directly with Treasury and the platform vendor to translate what we found into
-                requirements they could build.
-              </p>
+          <article class="to-be-card future-card">
+            <header>
+              <h3>To-Be</h3>
+              <p>Standardized and traceable</p>
+            </header>
+            <div class="to-be-flow">
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <path d="M13 19h30v24H13z" />
+                    <path d="M19 19v-7h18v7" />
+                    <path d="M20 34h5M31 34h5M23 28h10" />
+                  </svg>
+                </span>
+                <p>Registers</p>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <circle cx="28" cy="18" r="9" />
+                    <path d="M12 48c2.3-9.8 8-15 16-15s13.7 5.2 16 15" />
+                  </svg>
+                </span>
+                <p>Store management</p>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <path d="M8 34V20h27v20H8z" />
+                    <path d="M35 27h7l6 7v6H35V27z" />
+                    <circle cx="18" cy="41" r="4" />
+                    <circle cx="42" cy="41" r="4" />
+                  </svg>
+                </span>
+                <p>Cash-in-transit</p>
+              </div>
+              <span aria-hidden="true">→</span>
+              <div>
+                <span class="to-be-icon" aria-hidden="true">
+                  <svg viewBox="0 0 56 56" role="img">
+                    <path d="M8 24h40L28 10 8 24z" />
+                    <path d="M14 24v20M24 24v20M34 24v20M44 24v20M10 44h36" />
+                  </svg>
+                </span>
+                <p>Bank</p>
+              </div>
             </div>
-          </article>
-
-          <article class="case-row">
-            <span class="case-row-number">04</span>
-            <div>
-              <h2>Process</h2>
-              <p>
-                We mapped both flows end to end through workshops with Treasury, store visits, and interviews with store
-                managers and cash transport staff. From that, we built As-Is blueprints, designed To-Be flows with every
-                team involved, and translated the future state into BRDs for the vendor backlog.
-              </p>
-            </div>
-          </article>
-
-          <article class="case-row">
-            <span class="case-row-number">05</span>
-            <div>
-              <h2>Outcome</h2>
-              <p>
-                The work translated into two BRDs with ten requirements added to the platform vendor's backlog,
-                alongside a new transport receipt document that gave Treasury a documented, auditable process to replace
-                an inconsistent, paper-dependent one.
-              </p>
+            <div class="to-be-tags future-tags">
+              <span>Standardized process</span>
+              <span>Transport receipt</span>
+              <span>Clear responsibilities</span>
+              <span>System traceability (e.g. SAP)</span>
             </div>
           </article>
         </div>
-
-        <aside class="case-evidence morralla-evidence">
-          <section class="evidence-card morralla-flow-card-panel">
-            <h2>Cash logistics flows</h2>
-            <div class="cash-flow-grid" aria-label="Cash logistics flows">
-              <article>
-                <span class="cash-flow-label">Cash-out</span>
-                <ol>
-                  <li>Register</li>
-                  <li>Store handling</li>
-                  <li>Transport pickup</li>
-                  <li>Bank deposit</li>
-                  <li>Treasury reconciliation</li>
-                </ol>
-              </article>
-              <article>
-                <span class="cash-flow-label">Cash-in</span>
-                <ol>
-                  <li>Treasury request</li>
-                  <li>Bank release</li>
-                  <li>Transport delivery</li>
-                  <li>Store receipt</li>
-                  <li>Daily operations</li>
-                </ol>
-              </article>
-            </div>
-          </section>
-
-          <section class="evidence-card dependencies-card">
-            <h2>Operational frictions</h2>
-            <div class="dependency-grid morralla-friction-grid">
-              <article>
-                <img class="dependency-icon" src="assets/insight-context-mismatch.svg" alt="" />
-                <h3>Store-by-store variability</h3>
-                <p>Each store handled cash routines differently, making the process hard to forecast or audit.</p>
-              </article>
-              <article>
-                <img class="dependency-icon" src="assets/insight-onboarding-overload.svg" alt="" />
-                <h3>Paper-dependent evidence</h3>
-                <p>Forms, signatures, and physical artifacts carried key proof across multiple handoff points.</p>
-              </article>
-              <article>
-                <img class="dependency-icon" src="assets/insight-lack-clarity.svg" alt="" />
-                <h3>No shared source of truth</h3>
-                <p>Stores, transport providers, Treasury, and the bank worked from fragmented process visibility.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="strategic-impact-card morralla-outputs-card">
-            <h2>Service design outputs</h2>
-            <div class="impact-result-grid">
-              <article>
-                <span class="impact-symbol">
-                  <img src="assets/icon-framework.svg" alt="" />
-                </span>
-                <h3>As-Is and To-Be blueprints</h3>
-                <p>
-                  The flows documented how cash moved today and defined the future operating model for both cash
-                  directions.
-                </p>
-              </article>
-              <article>
-                <span class="impact-symbol">
-                  <img src="assets/icon-migration.svg" alt="" />
-                </span>
-                <h3>Vendor-ready BRDs</h3>
-                <p>
-                  The blueprints were translated into requirements the external platform vendor could add to its
-                  backlog.
-                </p>
-              </article>
-              <article>
-                <span class="impact-symbol">
-                  <img src="assets/icon-booking-workflow.svg" alt="" />
-                </span>
-                <h3>Proof-of-custody receipt</h3>
-                <p>
-                  We proposed and designed a signed receipt to close the custody gap during cash transport pickup.
-                </p>
-              </article>
-            </div>
-          </section>
-        </aside>
       </section>
 
-      <section class="booking-impact-band" aria-label="Store cash logistics outcome">
-        <article>
-          <strong>2</strong>
-          <span>BRDs created for the platform vendor's backlog</span>
-        </article>
-        <article>
-          <strong>10</strong>
-          <span>Requirements translated from service blueprints</span>
-        </article>
-        <article>
-          <strong>2</strong>
-          <span>Complementary cash flows mapped end to end</span>
-        </article>
-        <article>
-          <strong>1</strong>
-          <span>New signed receipt document for proof of custody</span>
-        </article>
+      <section class="morralla-enabled-section" aria-labelledby="morralla-enabled-title">
+        <div class="morralla-enabled-copy">
+          <div class="scaling-section-kicker">
+            <span>05</span>
+            <p>What it enabled</p>
+          </div>
+          <h2 id="morralla-enabled-title">Tangible outputs and a stronger foundation for future work</h2>
+        </div>
+
+        <div class="morralla-enabled-panel">
+          <div class="morralla-output-grid" aria-label="Service design outputs">
+            <article>
+              <span class="morralla-output-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M13 6h15l8 8v28H13z" />
+                  <path d="M28 6v9h8" />
+                  <path d="M18 24h13M18 30h13M18 36h8" />
+                </svg>
+              </span>
+              <h3>2 BRDs</h3>
+              <p>Delivered for business viability assessment</p>
+            </article>
+            <article>
+              <span class="morralla-output-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M16 15h18M16 24h18M16 33h18" />
+                  <circle cx="10" cy="15" r="2" />
+                  <circle cx="10" cy="24" r="2" />
+                  <circle cx="10" cy="33" r="2" />
+                </svg>
+              </span>
+              <h3>10 requirements</h3>
+              <p>Added to the SAP backlog</p>
+            </article>
+            <article>
+              <span class="morralla-output-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M13 6h15l8 8v28H13z" />
+                  <path d="M28 6v9h8" />
+                  <path d="M18 24h13M18 30h13M18 36h8" />
+                </svg>
+              </span>
+              <h3>New transport receipt</h3>
+              <p>Implemented in the operation</p>
+            </article>
+            <article>
+              <span class="morralla-output-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48" role="img">
+                  <path d="M8 12c5-3 10-3 16 0v27c-6-3-11-3-16 0z" />
+                  <path d="M24 12c6-3 11-3 16 0v27c-5-3-10-3-16 0z" />
+                  <path d="M24 12v27" />
+                </svg>
+              </span>
+              <h3>Documented process</h3>
+              <p>Incorporated into operational documentation</p>
+            </article>
+          </div>
+
+          <aside class="morralla-closing-callout">
+            <span aria-hidden="true">✦</span>
+            <p>
+              We didn't start by digitizing a broken process. We first created a common way of working that could be
+              traced, and eventually digitized.
+            </p>
+          </aside>
+        </div>
       </section>
     </main>
   </body>
