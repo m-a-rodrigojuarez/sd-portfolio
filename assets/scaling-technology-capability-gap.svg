@@ -1,12 +1,16 @@
 <svg width="860" height="260" viewBox="0 0 860 260" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="860" height="260" fill="white"/>
-  <rect x="26" y="28" width="300" height="204" rx="16" fill="#F7FAFF" stroke="#CFE0FF" stroke-width="2"/>
-  <rect x="534" y="28" width="300" height="204" rx="16" fill="#F6FCF8" stroke="#C8DFD4" stroke-width="2"/>
+  <rect x="26" y="28" width="300" height="204" rx="16" fill="#F6FCF8" stroke="#C8DFD4" stroke-width="2"/>
+  <rect x="534" y="28" width="300" height="204" rx="16" fill="#F7FAFF" stroke="#CFE0FF" stroke-width="2"/>
 
-  <text x="176" y="91" text-anchor="middle" fill="#1F6FEB" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" letter-spacing="1.2">WALMART</text>
-  <text x="176" y="148" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">
-    <tspan x="176" dy="0">More manual</tspan>
-    <tspan x="176" dy="30">handoffs</tspan>
+  <text x="176" y="82" text-anchor="middle" fill="#087A46" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" letter-spacing="1.2">INSTALEAP</text>
+  <text x="176" y="132" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">
+    <tspan x="176" dy="0">Greater picker</tspan>
+    <tspan x="176" dy="29">autonomy</tspan>
+  </text>
+  <text x="176" y="194" text-anchor="middle" fill="#59687C" font-family="Inter, Arial, sans-serif" font-size="18" font-style="italic" font-weight="500">
+    <tspan x="176" dy="0">In-app communication</tspan>
+    <tspan x="176" dy="24">&amp; approvals</tspan>
   </text>
 
   <text x="430" y="108" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">CAPABILITY GAP</text>
@@ -15,9 +19,13 @@
   <path d="M446 150H474" stroke="#07111F" stroke-width="7" stroke-linecap="round"/>
   <path d="M463 139L474 150L463 161" stroke="#07111F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <text x="684" y="91" text-anchor="middle" fill="#087A46" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" letter-spacing="1.2">INSTALEAP</text>
-  <text x="684" y="148" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">
-    <tspan x="684" dy="0">Greater picker</tspan>
-    <tspan x="684" dy="30">autonomy</tspan>
+  <text x="684" y="82" text-anchor="middle" fill="#1F6FEB" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" letter-spacing="1.2">WALMART APP</text>
+  <text x="684" y="132" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">
+    <tspan x="684" dy="0">More manual</tspan>
+    <tspan x="684" dy="29">handoffs</tspan>
+  </text>
+  <text x="684" y="194" text-anchor="middle" fill="#59687C" font-family="Inter, Arial, sans-serif" font-size="18" font-style="italic" font-weight="500">
+    <tspan x="684" dy="0">WhatsApp &amp; external</tspan>
+    <tspan x="684" dy="24">approvals</tspan>
   </text>
 </svg>
