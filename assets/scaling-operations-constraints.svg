@@ -1,0 +1,52 @@
+<svg width="860" height="360" viewBox="0 0 860 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="360" fill="white"/>
+  <defs>
+    <pattern id="overlap-hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
+      <path d="M0 0V8" stroke="#9BB8D6" stroke-width="2" opacity="0.55"/>
+    </pattern>
+    <clipPath id="left-circle">
+      <circle cx="330" cy="180" r="132"/>
+    </clipPath>
+    <clipPath id="right-circle">
+      <circle cx="530" cy="180" r="132"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="330" cy="180" r="132" fill="#F5F8FE" fill-opacity="0.82" stroke="#1F6FEB" stroke-width="3"/>
+  <circle cx="530" cy="180" r="132" fill="#FAFCFB" fill-opacity="0.82" stroke="#087A46" stroke-width="3"/>
+  <g clip-path="url(#left-circle)">
+    <g clip-path="url(#right-circle)">
+      <circle cx="330" cy="180" r="132" fill="url(#overlap-hatch)"/>
+    </g>
+  </g>
+
+  <text x="300" y="104" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">
+    <tspan x="300" dy="0">Shared</tspan>
+    <tspan x="300" dy="26">constraints</tspan>
+  </text>
+  <g transform="translate(278 140)" stroke="#1F6FEB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="18" cy="13" r="7"/>
+    <circle cx="39" cy="14" r="6"/>
+    <path d="M4 42c2-11 7-16 16-16s14 5 16 16"/>
+    <path d="M28 42c1-8 5-12 12-12 6 0 10 4 12 12"/>
+  </g>
+  <text x="300" y="215" text-anchor="middle" fill="#59687C" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500">
+    <tspan x="300" dy="0">+ Store workload</tspan>
+    <tspan x="300" dy="30">+ Delivery-slot</tspan>
+    <tspan x="300" dy="24">economics</tspan>
+  </text>
+
+  <text x="540" y="106" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800">
+    <tspan x="540" dy="0">Format-specific</tspan>
+    <tspan x="540" dy="24">gaps</tspan>
+  </text>
+  <g transform="translate(518 144)" stroke="#087A46" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 0L44 40H0L22 0Z"/>
+    <path d="M22 13v12"/>
+    <path d="M22 32h.01"/>
+  </g>
+  <text x="540" y="216" text-anchor="middle" fill="#59687C" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="500">
+    <tspan x="540" dy="0">+ Tools &amp; routing</tspan>
+    <tspan x="540" dy="28">+ Cash-on-delivery</tspan>
+  </text>
+</svg>

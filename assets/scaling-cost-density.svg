@@ -1,0 +1,13 @@
+<svg width="860" height="360" viewBox="0 0 860 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="860" height="360" fill="white"/>
+  <rect x="20" y="20" width="350" height="160" rx="14" fill="#F7FAFF" stroke="#CFE0FF" stroke-width="2"/>
+  <rect x="490" y="20" width="350" height="160" rx="14" fill="#FFF5F1" stroke="#FFCDBE" stroke-width="2"/>
+  <text x="195" y="95" text-anchor="middle" fill="#1F6FEB" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">7–9 orders</text>
+  <text x="195" y="144" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Target density</text>
+  <text x="665" y="95" text-anchor="middle" fill="#F05423" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">2–4 orders</text>
+  <text x="665" y="144" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800">Lower-demand markets</text>
+  <text x="430" y="113" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="900">vs.</text>
+  <path d="M430 224V269" stroke="#07111F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M407 249L430 272L453 249" stroke="#07111F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="430" y="333" text-anchor="middle" fill="#07111F" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="900">Higher cost per delivery</text>
+</svg>
