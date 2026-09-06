@@ -1634,6 +1634,325 @@ a {
     opacity: 0.88;
 }
 
+.booking-flow-hero {
+    min-height: 280px;
+    padding: 56px clamp(20px, 5vw, 64px) 34px;
+    background: #030914;
+}
+
+.booking-flow-hero::after {
+    background:
+        linear-gradient(90deg, rgba(3, 9, 20, 0.82) 0%, rgba(3, 9, 20, 0.6) 42%, rgba(3, 9, 20, 0.14) 100%),
+        linear-gradient(180deg, rgba(3, 9, 20, 0.04), rgba(3, 9, 20, 0.24));
+}
+
+.booking-flow-hero .booking-hero-copy {
+    max-width: 720px;
+}
+
+.booking-flow-hero h1 {
+    max-width: 720px;
+    font-size: clamp(2.55rem, 4.05vw, 4.3rem);
+    line-height: 1;
+}
+
+.booking-flow-hero .booking-hero-subtitle {
+    max-width: 650px;
+    margin-top: 18px;
+    font-size: clamp(1rem, 1.55vw, 1.26rem);
+    line-height: 1.28;
+}
+
+.booking-flow-hero .booking-hero-copy p:last-child {
+    max-width: 650px;
+    margin-top: 16px;
+    font-size: clamp(0.88rem, 1.05vw, 0.98rem);
+    line-height: 1.42;
+}
+
+.booking-flow-hero .booking-hero-visual {
+    inset: 0;
+    width: 100%;
+}
+
+.booking-flow-hero .booking-hero-visual img {
+    object-position: center right;
+    opacity: 0.88;
+}
+
+.booking-flow-challenge-section {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.55fr) minmax(560px, 1fr);
+    gap: clamp(30px, 5vw, 68px);
+    align-items: center;
+    padding: 54px clamp(20px, 5vw, 64px) 48px;
+    border-top: 1px solid #e3eaf5;
+    background: #ffffff;
+}
+
+.booking-flow-challenge-copy h2 {
+    max-width: 440px;
+    margin: 0;
+    color: var(--ink);
+    font-size: clamp(1.7rem, 2.85vw, 2.4rem);
+    line-height: 1.08;
+}
+
+.booking-flow-challenge-copy>p {
+    max-width: 420px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: clamp(0.98rem, 1.22vw, 1.1rem);
+    line-height: 1.42;
+}
+
+.booking-flow-challenge-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.booking-flow-problem-section {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.55fr) minmax(560px, 1fr);
+    gap: clamp(30px, 5vw, 68px);
+    align-items: center;
+    padding: 54px clamp(20px, 5vw, 64px) 54px;
+    border-top: 1px solid #e3eaf5;
+    background: #ffffff;
+}
+
+.booking-flow-problem-copy h2 {
+    max-width: 450px;
+    margin: 0;
+    color: var(--ink);
+    font-size: clamp(1.7rem, 2.85vw, 2.4rem);
+    line-height: 1.08;
+}
+
+.booking-flow-problem-copy>p {
+    max-width: 430px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: clamp(0.98rem, 1.22vw, 1.1rem);
+    line-height: 1.42;
+}
+
+.booking-flow-note {
+    display: grid;
+    grid-template-columns: 50px minmax(0, 1fr);
+    gap: 14px;
+    align-items: center;
+    max-width: 430px;
+    margin-top: 22px;
+    padding: 16px 18px;
+    border-radius: 8px;
+    background: #edf4ff;
+}
+
+.booking-flow-note-icon {
+    display: grid;
+    width: 50px;
+    height: 50px;
+    place-items: center;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #1f6feb;
+}
+
+.booking-flow-note-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.booking-flow-note-icon path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.booking-flow-note p {
+    margin: 0;
+    color: var(--muted);
+    font-size: clamp(0.86rem, 0.98vw, 0.95rem);
+    line-height: 1.36;
+}
+
+.booking-flow-problem-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    padding-bottom: 10px;
+}
+
+.booking-flow-strategy-section {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.55fr) minmax(560px, 1fr);
+    gap: clamp(30px, 5vw, 68px);
+    align-items: center;
+    padding: 54px clamp(20px, 5vw, 64px) 54px;
+    border-top: 1px solid #e3eaf5;
+    background: #ffffff;
+}
+
+.booking-flow-strategy-copy h2 {
+    max-width: 450px;
+    margin: 0;
+    color: var(--ink);
+    font-size: clamp(1.7rem, 2.85vw, 2.4rem);
+    line-height: 1.08;
+}
+
+.booking-flow-strategy-copy>p {
+    max-width: 430px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: clamp(0.98rem, 1.22vw, 1.1rem);
+    line-height: 1.42;
+}
+
+.booking-flow-strategy-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.booking-flow-operations-section {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.55fr) minmax(560px, 1fr);
+    gap: clamp(30px, 5vw, 68px);
+    align-items: center;
+    padding: 54px clamp(20px, 5vw, 64px) 54px;
+    border-top: 1px solid #e3eaf5;
+    background: #ffffff;
+}
+
+.booking-flow-operations-copy h2 {
+    max-width: 450px;
+    margin: 0;
+    color: var(--ink);
+    font-size: clamp(1.7rem, 2.85vw, 2.4rem);
+    line-height: 1.08;
+}
+
+.booking-flow-operations-copy>p {
+    max-width: 430px;
+    margin: 18px 0 0;
+    color: var(--muted);
+    font-size: clamp(0.98rem, 1.22vw, 1.1rem);
+    line-height: 1.42;
+}
+
+.booking-flow-operations-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.booking-flow-results-section {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.48fr) minmax(560px, 1fr);
+    gap: clamp(42px, 5vw, 86px);
+    align-items: start;
+    padding: 54px clamp(24px, 5vw, 72px);
+    border-top: 1px solid rgba(148, 163, 184, 0.18);
+    background: #ffffff;
+}
+
+.booking-flow-results-copy h2 {
+    max-width: 420px;
+    margin: 18px 0 0;
+    color: var(--ink);
+    font-size: clamp(2rem, 3.1vw, 3.15rem);
+    line-height: 1.05;
+}
+
+.booking-flow-results-copy>p {
+    max-width: 440px;
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: clamp(1rem, 1.15vw, 1.12rem);
+    line-height: 1.42;
+}
+
+.booking-flow-results-content {
+    display: grid;
+    gap: 20px;
+}
+
+.booking-flow-results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.booking-flow-results-grid article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 152px;
+    padding: 22px 18px;
+    border: 1px solid #dbe6f5;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 18px 34px rgba(12, 28, 53, 0.05);
+    text-align: center;
+}
+
+.booking-flow-results-grid strong {
+    display: block;
+    color: #1f6feb;
+    font-size: clamp(1.75rem, 2.7vw, 2.7rem);
+    font-weight: 900;
+    line-height: 0.98;
+}
+
+.booking-flow-results-grid span {
+    display: block;
+    margin-top: 14px;
+    color: var(--ink);
+    font-size: 0.95rem;
+    font-weight: 750;
+    line-height: 1.28;
+}
+
+.booking-flow-results-grid em {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-style: normal;
+    line-height: 1.35;
+}
+
+.booking-flow-results-grid .booking-flow-result-feature {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #07111f 0%, #123f78 100%);
+    border-color: rgba(31, 111, 235, 0.22);
+    color: #ffffff;
+}
+
+.booking-flow-results-grid .booking-flow-result-feature strong {
+    max-width: 470px;
+    color: #ffffff;
+    font-size: clamp(1.12rem, 1.45vw, 1.38rem);
+    line-height: 1.22;
+}
+
+.booking-flow-results-grid .booking-flow-result-feature span {
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+}
+
+.booking-flow-closing-callout {
+    margin-top: 2px;
+}
+
 .onboarding-challenge-section {
     display: grid;
     grid-template-columns: minmax(280px, 0.55fr) minmax(560px, 1fr);
@@ -2406,7 +2725,7 @@ a {
     display: grid;
     min-height: 280px;
     overflow: hidden;
-    padding: 56px clamp(20px, 5vw, 64px) 34px;
+    padding: 82px clamp(20px, 5vw, 64px) 34px;
     color: #ffffff;
     background: #030914;
 }
@@ -3813,7 +4132,7 @@ a {
 
 .morralla-hero {
     min-height: 280px;
-    padding: 56px clamp(20px, 5vw, 64px) 34px;
+    padding: 82px clamp(20px, 5vw, 64px) 34px;
     background: #030914;
 }
 
@@ -3841,6 +4160,48 @@ a {
 }
 
 .morralla-hero .booking-hero-visual {
+    inset: 0;
+    width: 100%;
+}
+
+.scaling-hero,
+.booking-hero.onboarding-hero,
+.booking-hero.booking-flow-hero,
+.booking-hero.morralla-hero {
+    min-height: 280px;
+    padding: 82px clamp(20px, 5vw, 64px) 34px;
+    background: #030914;
+}
+
+.scaling-hero-copy,
+.booking-hero.onboarding-hero .booking-hero-copy,
+.booking-hero.booking-flow-hero .booking-hero-copy,
+.booking-hero.morralla-hero .booking-hero-copy {
+    max-width: 720px;
+}
+
+.scaling-hero h1,
+.booking-hero.onboarding-hero h1,
+.booking-hero.booking-flow-hero h1,
+.booking-hero.morralla-hero h1 {
+    max-width: 720px;
+    font-size: clamp(2.55rem, 4.05vw, 4.3rem);
+    line-height: 1;
+}
+
+.scaling-hero-subtitle,
+.booking-hero.onboarding-hero .booking-hero-subtitle,
+.booking-hero.booking-flow-hero .booking-hero-subtitle,
+.booking-hero.morralla-hero .booking-hero-subtitle {
+    max-width: 650px;
+    margin-top: 18px;
+    font-size: clamp(1rem, 1.55vw, 1.26rem);
+    line-height: 1.28;
+}
+
+.booking-hero.onboarding-hero .booking-hero-visual,
+.booking-hero.booking-flow-hero .booking-hero-visual,
+.booking-hero.morralla-hero .booking-hero-visual {
     inset: 0;
     width: 100%;
 }
@@ -4862,6 +5223,10 @@ a {
     .booking-impact-band {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .booking-flow-results-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 900px) {
@@ -5116,9 +5481,39 @@ a {
         padding-top: 74px;
     }
 
+    .booking-flow-hero {
+        min-height: 430px;
+        padding-top: 74px;
+    }
+
     .onboarding-hero .booking-hero-visual {
         inset: 0;
         height: 100%;
+    }
+
+    .booking-flow-hero .booking-hero-visual {
+        inset: 0;
+        height: 100%;
+    }
+
+    .booking-flow-challenge-section {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-flow-problem-section {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-flow-strategy-section {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-flow-operations-section {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-flow-results-section {
+        grid-template-columns: 1fr;
     }
 
     .onboarding-challenge-section {
@@ -5141,6 +5536,16 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .booking-flow-challenge-copy h2,
+    .booking-flow-challenge-copy>p,
+    .booking-flow-problem-copy h2,
+    .booking-flow-problem-copy>p,
+    .booking-flow-strategy-copy h2,
+    .booking-flow-strategy-copy>p,
+    .booking-flow-operations-copy h2,
+    .booking-flow-operations-copy>p,
+    .booking-flow-results-copy h2,
+    .booking-flow-results-copy>p,
     .onboarding-challenge-copy h2,
     .onboarding-challenge-copy>p,
     .onboarding-problem-copy h2,
@@ -5342,6 +5747,12 @@ a {
     .capability-grid,
     .outcome-grid {
         grid-template-columns: 1fr;
+    }
+
+    .booking-flow-results-grid,
+    .booking-flow-results-grid .booking-flow-result-feature {
+        grid-template-columns: 1fr;
+        grid-column: auto;
     }
 
     .hero-actions {
@@ -5619,12 +6030,44 @@ a {
         min-height: 430px;
     }
 
+    .booking-flow-hero {
+        min-height: 430px;
+    }
+
     .onboarding-hero h1 {
+        font-size: clamp(2.35rem, 10vw, 3.35rem);
+    }
+
+    .booking-flow-hero h1 {
         font-size: clamp(2.35rem, 10vw, 3.35rem);
     }
 
     .onboarding-hero .booking-hero-visual {
         height: 100%;
+    }
+
+    .booking-flow-hero .booking-hero-visual {
+        height: 100%;
+    }
+
+    .booking-flow-challenge-section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .booking-flow-problem-section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .booking-flow-strategy-section {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .booking-flow-operations-section {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .onboarding-challenge-section {

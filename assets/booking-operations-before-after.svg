@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 300" role="img" aria-labelledby="title desc">
+  <title id="title">Before and after reservation error handling</title>
+  <desc id="desc">Before: error, investigate, find in OTA, and re-enter manually, taking five to nine minutes per reservation. After: error, fix issue, reprocess, and reservation generated automatically, reducing manual correction time by about ninety percent.</desc>
+  <defs>
+    <linearGradient id="beforeBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff8f9"/>
+      <stop offset="1" stop-color="#ffecef"/>
+    </linearGradient>
+    <linearGradient id="afterBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f2fff9"/>
+      <stop offset="1" stop-color="#e2f7ed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1180" height="300" fill="#ffffff"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(0 8)">
+      <rect width="510" height="232" rx="8" fill="url(#beforeBg)" stroke="#ffe0e5"/>
+      <text x="26" y="34" fill="#ff2f3d" font-size="20" font-weight="900">Before</text>
+
+      <g transform="translate(44 70)" text-anchor="middle">
+        <g transform="translate(0 0)">
+          <path d="M18 0 36 32H0z" fill="#ff2f3d"/>
+          <path d="M18 10v11M18 27h.1" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+          <text x="18" y="66" fill="#40506a" font-size="13" font-weight="650">Error</text>
+        </g>
+        <text x="93" y="24" fill="#92a0b3" font-size="24" font-weight="700">→</text>
+        <g transform="translate(130 0)">
+          <path d="M10 0h22l10 10v34H10z" fill="none" stroke="#5f718d" stroke-width="3"/>
+          <path d="M32 0v11h10" fill="none" stroke="#5f718d" stroke-width="3"/>
+          <path d="M17 22h18M17 30h18" stroke="#5f718d" stroke-width="3" stroke-linecap="round"/>
+          <text x="26" y="66" fill="#40506a" font-size="13" font-weight="650">Investigate</text>
+        </g>
+        <text x="226" y="24" fill="#92a0b3" font-size="24" font-weight="700">→</text>
+        <g transform="translate(262 0)">
+          <circle cx="21" cy="21" r="16" fill="none" stroke="#40506a" stroke-width="4"/>
+          <path d="m34 34 13 13" stroke="#40506a" stroke-width="5" stroke-linecap="round"/>
+          <text x="25" y="66" fill="#40506a" font-size="13" font-weight="650">Find in OTA</text>
+        </g>
+        <text x="356" y="24" fill="#92a0b3" font-size="24" font-weight="700">→</text>
+        <g transform="translate(394 0)">
+          <ellipse cx="21" cy="8" rx="19" ry="8" fill="#40506a"/>
+          <path d="M2 8v32c0 5 8.5 10 19 10s19-5 19-10V8" fill="#40506a"/>
+          <path d="M2 24c0 5 8.5 10 19 10s19-5 19-10" fill="none" stroke="#ffffff" stroke-width="2.2"/>
+          <text x="22" y="66" fill="#40506a" font-size="13" font-weight="650">Re-enter</text>
+          <text x="22" y="82" fill="#40506a" font-size="13" font-weight="650">manually</text>
+        </g>
+      </g>
+
+      <rect x="26" y="180" width="458" height="36" rx="6" fill="#ffe1e6"/>
+      <text x="255" y="204" text-anchor="middle" fill="#ff2f3d" font-size="18" font-weight="900">5–9 min per reservation</text>
+    </g>
+
+    <text x="590" y="140" text-anchor="middle" fill="#1f6feb" font-size="44" font-weight="850">→</text>
+
+    <g transform="translate(670 8)">
+      <rect width="510" height="232" rx="8" fill="url(#afterBg)" stroke="#d8f1e5"/>
+      <text x="26" y="34" fill="#0f8b5f" font-size="20" font-weight="900">After</text>
+
+      <g transform="translate(42 70)" text-anchor="middle">
+        <g transform="translate(0 0)">
+          <path d="M18 0 36 32H0z" fill="#ff2f3d"/>
+          <path d="M18 10v11M18 27h.1" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/>
+          <text x="18" y="66" fill="#40506a" font-size="13" font-weight="650">Error</text>
+        </g>
+        <text x="82" y="24" fill="#92a0b3" font-size="24" font-weight="700">→</text>
+        <g transform="translate(114 0)">
+          <path d="M35 4 24 15l7 7 11-11a15 15 0 0 1-20 19L9 43l-7-7 13-13A15 15 0 0 1 35 4z" fill="#1f6feb"/>
+          <text x="22" y="66" fill="#40506a" font-size="13" font-weight="650">Fix issue</text>
+        </g>
+        <text x="192" y="24" fill="#92a0b3" font-size="24" font-weight="700">→</text>
+        <g transform="translate(224 1)">
+          <rect x="0" y="0" width="94" height="46" rx="7" fill="#0f8b5f"/>
+          <text x="47" y="29" fill="#ffffff" font-size="15" font-weight="900">Reprocess</text>
+        </g>
+        <text x="344" y="24" fill="#92a0b3" font-size="24" font-weight="700">→</text>
+        <g transform="translate(392 1)">
+          <circle cx="20" cy="20" r="20" fill="#0f8b5f"/>
+          <path d="m11 20 7 7 13-15" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="20" y="66" fill="#40506a" font-size="12" font-weight="650">Reservation</text>
+          <text x="20" y="81" fill="#40506a" font-size="12" font-weight="650">generated</text>
+          <text x="20" y="96" fill="#40506a" font-size="12" font-weight="650">automatically</text>
+        </g>
+      </g>
+
+      <rect x="26" y="180" width="458" height="36" rx="6" fill="#d8f5e6"/>
+      <text x="255" y="204" text-anchor="middle" fill="#0f8b5f" font-size="18" font-weight="900">~90% less manual correction time</text>
+    </g>
+
+    <text x="670" y="270" fill="#526176" font-size="15" font-weight="600">Initially used by Call Center, later enabled for hotels.</text>
+  </g>
+</svg>

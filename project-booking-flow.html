@@ -15,17 +15,14 @@
     <main class="project-page immersive-case-page booking-case-page">
       <a class="back-link immersive-back" href="index.html#case-studies">Back to selected work</a>
 
-      <section class="booking-hero">
+      <section class="booking-hero booking-flow-hero">
         <div class="booking-hero-copy">
-          <p class="project-label">Hoteles City Express · Product Strategy</p>
-          <h1>Redesigning a distribution platform to unlock new business models</h1>
+          <p class="project-label">City Express · Product Strategy</p>
+          <h1>Building a distribution platform that could scale</h1>
           <span class="title-rule" aria-hidden="true"></span>
           <p class="booking-hero-subtitle">
-            Channel Manager redesign for scalable integrations, automated exceptions, and new distribution models
-          </p>
-          <p>
-            A fragmented, per-agency architecture slowed down integrations, buried the Call Center in manual fixes, and
-            left no room to grow into new business models.
+            Redesigning the Channel Manager to make new integrations faster, reduce operational friction, and support
+            new business models.
           </p>
         </div>
 
@@ -34,167 +31,137 @@
         </div>
       </section>
 
-      <section class="booking-summary-strip" aria-label="Booking flow executive summary">
-        <article>
-          <span>01 · Context</span>
-          <h2>Growing OTA dependency</h2>
+      <section class="booking-flow-challenge-section" aria-labelledby="booking-flow-challenge-title">
+        <div class="booking-flow-challenge-copy">
+          <div class="scaling-section-kicker">
+            <span>01</span>
+            <p>The challenge</p>
+          </div>
+          <h2 id="booking-flow-challenge-title">Growth was exposing the limits of the architecture.</h2>
           <p>
-            Hoteles City Express relied on a growing set of OTAs to sell rooms. Each new agency arrived with its own
-            process, rules, and data structure.
-          </p>
-        </article>
-        <article>
-          <span>02 · Problem</span>
-          <h2>Slow integrations, manual fixes</h2>
-          <p>
-            New OTA integrations took close to two months, and rejected reservations required Call Center agents to
-            work across three systems.
-          </p>
-        </article>
-        <article>
-          <span>03 · Approach</span>
-          <h2>Shared architecture</h2>
-          <p>
-            I led the Channel Manager redesign around reusable components, centralized inventory and pricing, and
-            agency-specific logic only where needed.
-          </p>
-        </article>
-        <article>
-          <span>04 · My role</span>
-          <h2>End-to-end product decision</h2>
-          <p>
-            I defined the target architecture, prioritized the redesign, partnered with Engineering, and validated the
-            solution against real booking data.
-          </p>
-        </article>
-        <article>
-          <span>05 · Impact</span>
-          <h2>Scalable channel growth</h2>
-          <p>
-            The redesign enabled 12 OTAs, GDS integration, hourly bookings, and measurable growth over 12 months.
-          </p>
-        </article>
-      </section>
-
-      <section class="booking-full-blueprint" aria-label="Architecture blueprint">
-        <div class="booking-full-blueprint-header">
-          <p class="section-kicker">Architecture blueprint</p>
-          <h2>From isolated integrations to scalable product infrastructure</h2>
-          <p>
-            The redesign transformed the Channel Manager from a collection of isolated OTA flows into a shared product
-            architecture that could scale integrations, automate exceptions, and unlock new distribution models.
+            Each new OTA brought its own development and maintenance burden to a small technology team.
           </p>
         </div>
 
-        <div class="booking-full-blueprint-grid">
-          <article class="booking-full-blueprint-card">
-            <span class="booking-blueprint-icon-slot" aria-hidden="true">
-              <img src="assets/fragmented.svg" alt="" />
-            </span>
-            <h3>Turning fragmented integrations into centralized control</h3>
-            <section>
-              <h4>From one-off integrations to a shared architecture</h4>
-              <p>
-                The original architecture treated every OTA as a fully independent entity, so each new integration
-                started from zero. We redesigned it around generic, reusable components for what OTAs had in common,
-                layered with OTA-specific logic only where it was actually needed.
-              </p>
-            </section>
-            <section>
-              <h4>Centralized inventory and pricing control</h4>
-              <p>
-                The same architecture enabled bulk inventory and pricing updates across properties and OTAs from a
-                single screen at headquarters, replacing manual, property-by-property updates.
-              </p>
-            </section>
-          </article>
-
-          <article class="booking-full-blueprint-card">
-            <span class="booking-blueprint-icon-slot" aria-hidden="true">
-              <img src="assets/alert.svg" alt="" />
-            </span>
-            <h3>Handling exceptions at scale</h3>
-            <section>
-              <h4>Generic error registration instead of manual fixes</h4>
-              <p>
-                Rejected reservations used to require manual integration, case by case, depending on the OTA. Working
-                with Operations, we prioritized registering them with generic, error-type-based information so each
-                hotel could confirm the details at check-in.
-              </p>
-            </section>
-            <section>
-              <h4>Self-service reprocessing for rate and availability errors</h4>
-              <p>
-                For rejections caused by unavailable rates or room types, we built a module that surfaced the error
-                directly to hotels. Once inventory was opened or the missing rate was loaded, the reservation
-                reprocessed automatically.
-              </p>
-            </section>
-          </article>
-
-          <article class="booking-full-blueprint-card">
-            <span class="booking-blueprint-icon-slot" aria-hidden="true">
-              <img src="assets/robot.svg" alt="" />
-            </span>
-            <h3>From a 5-9 minute manual process to one click</h3>
-            <section>
-              <h4>Before: a five-step manual fix across three systems</h4>
-              <p>
-                Call Center agents had to open the OTA portal, review the error, switch to the City Express PMS,
-                enable missing rate or inventory, manually register the reservation, and return to the OTA portal to
-                confirm it.
-              </p>
-            </section>
-            <section>
-              <h4>After: one click inside the Channel Manager</h4>
-              <p>
-                We built a screen showing every reservation with an error. Each one had a reprocess button that
-                triggered automated PMS registration and OTA confirmation, without manually entering either system.
-              </p>
-            </section>
-          </article>
-
-          <article class="booking-full-blueprint-card">
-            <span class="booking-blueprint-icon-slot" aria-hidden="true">
-              <img src="assets/business.svg" alt="" />
-            </span>
-            <h3>Turning architecture into new business lines</h3>
-            <section>
-              <h4>Enabling hourly bookings for airport hotels</h4>
-              <p>
-                Working with Business and Finance, we found that airport-hotel guests often needed a short stay to
-                shower and rest. We adapted the architecture to support hourly bookings through ByHours, including its
-                own pricing and inventory logic.
-              </p>
-            </section>
-            <section>
-              <h4>Enabling GDS agreements and surfacing new direct deals</h4>
-              <p>
-                We adapted the flow to support GDS-based corporate agreement rates and built a report identifying which
-                companies generated the most GDS reservations, helping Operations approach them directly.
-              </p>
-            </section>
-          </article>
+        <div class="booking-flow-challenge-visual">
+          <img
+            src="assets/booking-ota-custom-integrations.svg"
+            alt="Booking.com, Expedia, and Sabre each require a custom integration before connecting to PMS. New OTA equals start over."
+          />
         </div>
       </section>
 
-      <section class="booking-impact-band" aria-label="Conversion impact">
-        <article>
-          <strong>4 weeks</strong>
-          <span>New OTA integration time, down from nearly two months</span>
-        </article>
-        <article>
-          <strong>-90%</strong>
-          <span>Reduction in manual correction time through one-click reprocessing</span>
-        </article>
-        <article>
-          <strong>+38%</strong>
-          <span>More reservations over 12 months through channel optimization</span>
-        </article>
-        <article>
-          <strong>+19%</strong>
-          <span>Revenue growth supported by scalable distribution infrastructure</span>
-        </article>
+      <section class="booking-flow-problem-section" aria-labelledby="booking-flow-problem-title">
+        <div class="booking-flow-problem-copy">
+          <div class="scaling-section-kicker">
+            <span>02</span>
+            <p>Understanding the problem</p>
+          </div>
+          <h2 id="booking-flow-problem-title">The problem wasn't just integration speed.</h2>
+          <p>
+            Technical reviews and Call Center data showed that the same complexity was affecting both development and
+            hotel operations.
+          </p>
+          <aside class="booking-flow-note">
+            <span class="booking-flow-note-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" role="img">
+                <path d="M13 6h15l8 8v28H13z" />
+                <path d="M28 6v9h8" />
+                <path d="M18 25h12M18 31h12M18 37h7" />
+              </svg>
+            </span>
+            <p>I built an error catalog from Call Center reports to identify and measure recurring failures.</p>
+          </aside>
+        </div>
+
+        <div class="booking-flow-problem-visual">
+          <img
+            src="assets/booking-integration-problem.svg"
+            alt="Building required repeated components, integration-specific logic, and difficult maintenance. When something failed, teams checked Channel Manager, found the reservation in the OTA, and re-entered it in PMS, taking 5 to 9 minutes per reservation."
+          />
+        </div>
+      </section>
+
+      <section class="booking-flow-strategy-section" aria-labelledby="booking-flow-strategy-title">
+        <div class="booking-flow-strategy-copy">
+          <div class="scaling-section-kicker">
+            <span>03</span>
+            <p>The strategic move</p>
+          </div>
+          <h2 id="booking-flow-strategy-title">Separate what changes from what should stay common.</h2>
+          <p>
+            We redesigned the architecture around reusable components, isolating partner-specific rules from the
+            processing shared across integrations.
+          </p>
+        </div>
+
+        <div class="booking-flow-strategy-visual">
+          <img
+            src="assets/booking-strategic-funnel.svg"
+            alt="Booking.com, Expedia, Despegar.com, SABRE, ByHours, and Agoda connect to a partner-specific layer, then a common processing layer, then PMS."
+          />
+        </div>
+      </section>
+
+      <section class="booking-flow-operations-section" aria-labelledby="booking-flow-operations-title">
+        <div class="booking-flow-operations-copy">
+          <div class="scaling-section-kicker">
+            <span>04</span>
+            <p>Designing for operations</p>
+          </div>
+          <h2 id="booking-flow-operations-title">A failed reservation shouldn't become a manual workflow.</h2>
+          <p>
+            We redesigned error handling so teams could fix the underlying issue and reprocess the reservation instead
+            of rebuilding it manually across multiple systems.
+          </p>
+        </div>
+
+        <div class="booking-flow-operations-visual">
+          <img
+            src="assets/booking-operations-before-after.svg"
+            alt="Before: teams investigated an error, found it in the OTA, and re-entered it manually, taking five to nine minutes per reservation. After: teams fixed the issue and reprocessed the reservation, reducing manual correction time by about ninety percent."
+          />
+        </div>
+      </section>
+
+      <section class="booking-flow-results-section" aria-labelledby="booking-flow-results-title">
+        <div class="booking-flow-results-copy">
+          <div class="scaling-section-kicker">
+            <span>05</span>
+            <p>Results and what it enabled</p>
+          </div>
+          <h2 id="booking-flow-results-title">Less complexity. More room to grow.</h2>
+        </div>
+
+        <div class="booking-flow-results-content">
+          <div class="booking-flow-results-grid" aria-label="Project results">
+            <article>
+              <strong>~4 weeks</strong>
+              <span>New OTA integration</span>
+              <em>vs. nearly 2 months</em>
+            </article>
+            <article>
+              <strong>-90%</strong>
+              <span>Manual correction time</span>
+            </article>
+            <article>
+              <strong>+38%</strong>
+              <span>Reservations</span>
+            </article>
+            <article>
+              <strong>+19%</strong>
+              <span>Revenue</span>
+            </article>
+          </div>
+
+          <aside class="morralla-closing-callout booking-flow-closing-callout">
+            <span aria-hidden="true">“</span>
+            <p>
+              A more scalable platform made integrations easier to build, reservations easier to recover, and new
+              business opportunities easier to pursue.
+            </p>
+          </aside>
+        </div>
       </section>
     </main>
   </body>
