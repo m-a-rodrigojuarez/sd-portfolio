@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Channel Manager Redesign | Rodrigo Juarez</title>
+    <title>Building a Distribution Platform That Could Scale | Rodrigo Juarez</title>
     <meta
       name="description"
-      content="How Hoteles City Express's Channel Manager architecture was redesigned to cut integration time, automate error handling, and unlock new distribution channels."
+      content="A product strategy case study on redesigning City Express's Channel Manager to reduce integration complexity, simplify reservation recovery, and support new distribution models."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
@@ -21,9 +21,10 @@
           <h1>Building a distribution platform that could scale</h1>
           <span class="title-rule" aria-hidden="true"></span>
           <p class="booking-hero-subtitle">
-            Redesigning the Channel Manager to make new integrations faster, reduce operational friction, and support
-            new business models.
+            Redesigning the Channel Manager around a reusable foundation to speed up integrations, reduce operational
+            friction, and support new business models.
           </p>
+          <p class="booking-flow-hero-role">Role: Product strategy, architecture definition &amp; delivery leadership</p>
         </div>
 
         <div class="booking-hero-visual" aria-hidden="true">
@@ -39,7 +40,8 @@
           </div>
           <h2 id="booking-flow-challenge-title">Growth was exposing the limits of the architecture.</h2>
           <p>
-            Each new OTA brought its own development and maintenance burden to a small technology team.
+            Each new online travel agency (OTA) added development effort, maintenance complexity, and more operational
+            risk for a small technology team.
           </p>
         </div>
 
@@ -51,6 +53,25 @@
         </div>
       </section>
 
+      <section class="booking-flow-question-section" aria-label="Strategic question">
+        <article class="challenge-question-card booking-flow-question-card">
+          <div class="challenge-question-icon" aria-hidden="true">
+            <svg viewBox="0 0 56 56" role="img">
+              <circle cx="28" cy="28" r="18" />
+              <circle cx="28" cy="28" r="8" />
+              <path d="M28 10v8M28 38v8M10 28h8M38 28h8" />
+              <path d="M35 21l8-8" />
+            </svg>
+          </div>
+          <div>
+            <h3>
+              How could a small team support more partners and business models without multiplying complexity with every
+              integration?
+            </h3>
+          </div>
+        </article>
+      </section>
+
       <section class="booking-flow-problem-section" aria-labelledby="booking-flow-problem-title">
         <div class="booking-flow-problem-copy">
           <div class="scaling-section-kicker">
@@ -59,8 +80,8 @@
           </div>
           <h2 id="booking-flow-problem-title">The problem wasn't just integration speed.</h2>
           <p>
-            Technical reviews and Call Center data showed that the same complexity was affecting both development and
-            hotel operations.
+            The same integration-specific architecture that slowed development also made reservation failures harder for
+            Call Center and hotel teams to recover.
           </p>
           <aside class="booking-flow-note">
             <span class="booking-flow-note-icon" aria-hidden="true">
@@ -70,7 +91,10 @@
                 <path d="M18 25h12M18 31h12M18 37h7" />
               </svg>
             </span>
-            <p>I built an error catalog from Call Center reports to identify and measure recurring failures.</p>
+            <p>
+              I built an error catalog from Call Center reports to identify recurring failure patterns and understand
+              where the architecture was creating operational work.
+            </p>
           </aside>
         </div>
 
@@ -90,8 +114,11 @@
           </div>
           <h2 id="booking-flow-strategy-title">Separate what changes from what should stay common.</h2>
           <p>
-            We redesigned the architecture around reusable components, isolating partner-specific rules from the
-            processing shared across integrations.
+            Instead of rebuilding each integration, I redesigned the architecture so partner-specific logic could change
+            without disrupting the processing shared across channels.
+          </p>
+          <p class="booking-flow-concept-line">
+            One shared foundation, with only the partner-specific logic changing at the edge.
           </p>
         </div>
 
@@ -107,12 +134,16 @@
         <div class="booking-flow-operations-copy">
           <div class="scaling-section-kicker">
             <span>04</span>
-            <p>Designing for operations</p>
+            <p>Operational redesign</p>
           </div>
           <h2 id="booking-flow-operations-title">A failed reservation shouldn't become a manual workflow.</h2>
           <p>
-            We redesigned error handling so teams could fix the underlying issue and reprocess the reservation instead
-            of rebuilding it manually across multiple systems.
+            I redesigned the recovery flow so teams could fix the underlying issue and reprocess the reservation instead
+            of rebuilding it manually across systems.
+          </p>
+          <p class="booking-flow-concept-line">
+            The goal wasn't only to make recovery faster; it was to remove unnecessary manual reconstruction from the
+            workflow.
           </p>
         </div>
 
@@ -130,7 +161,7 @@
             <span>05</span>
             <p>Results and what it enabled</p>
           </div>
-          <h2 id="booking-flow-results-title">Less complexity. More room to grow.</h2>
+          <h2 id="booking-flow-results-title">Less complexity to maintain. More flexibility to grow.</h2>
         </div>
 
         <div class="booking-flow-results-content">
@@ -147,20 +178,31 @@
             <article>
               <strong>+38%</strong>
               <span>Reservations</span>
+              <em>over the following 12 months</em>
             </article>
             <article>
               <strong>+19%</strong>
-              <span>Revenue</span>
+              <span>Revenue growth</span>
+              <em>following the platform redesign</em>
             </article>
           </div>
+
+          <article class="booking-flow-business-model-note">
+            <p>
+              The new architecture also made it possible to support new distribution models, including ByHours hourly
+              bookings and GDS corporate rates, with fewer PMS changes.
+            </p>
+          </article>
 
           <aside class="morralla-closing-callout booking-flow-closing-callout">
             <span aria-hidden="true">“</span>
             <p>
               A more scalable platform made integrations easier to build, reservations easier to recover, and new
-              business opportunities easier to pursue.
+              partners and business models easier to support.
             </p>
           </aside>
+
+          <a class="case-next-link" href="index.html#case-studies">Back to selected work →</a>
         </div>
       </section>
     </main>

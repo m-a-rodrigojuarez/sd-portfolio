@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scaling Operations | Rodrigo Juarez</title>
+    <title>Finding a Common Operating Model for OnDemand | Rodrigo Juarez</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -17,8 +17,10 @@
           <h1>Finding a common operating model for OnDemand</h1>
           <span class="title-rule" aria-hidden="true"></span>
           <p class="scaling-hero-subtitle">
-            Understanding what needed to change before Walmart could standardize OnDemand across its retail formats.
+            Exploring how different retail formats, tools, and delivery models could work within a shared OnDemand
+            system.
           </p>
+          <p class="scaling-hero-role">Role: Research strategy &amp; product discovery</p>
         </div>
 
         <div class="operations-visual" aria-hidden="true">
@@ -47,7 +49,7 @@
               <ul>
                 <li>Reference operating model</li>
                 <li>Walmart tools</li>
-                <li>Local Fleet + 3P delivery</li>
+                <li>Local Fleet + third-party (3P) delivery</li>
               </ul>
             </div>
           </article>
@@ -90,11 +92,10 @@
             </svg>
           </div>
           <div>
-            <h3>What would it take to standardize OnDemand operations across Walmart's retail formats?</h3>
+            <h3>What could be standardized across formats — and what needed to change first?</h3>
             <p>
-              The challenge wasn't simply to replicate Supercenter's model. We needed to understand how each format
-              actually operated, what its technology could support, and why the economics of last-mile delivery varied
-              by market.
+              We needed to understand how each format operated, what its technology could support, and where the
+              delivery economics made sense.
             </p>
           </div>
         </article>
@@ -120,7 +121,10 @@
             <div>
               <h3>Operating model</h3>
               <h4>How does each format actually operate?</h4>
-              <p>Mapped the end-to-end process to understand roles, workflows, dependencies, and operational gaps.</p>
+              <p>
+                Mapped the end-to-end process to understand roles, dependencies, and where the operating models
+                diverged.
+              </p>
             </div>
           </article>
 
@@ -134,10 +138,9 @@
             </div>
             <div>
               <h3>Technology</h3>
-              <h4>What would Walmart's tools need to support?</h4>
+              <h4>What would Walmart tools need to support?</h4>
               <p>
-                Compared platform capabilities against the workflows to identify gaps and translate them into product
-                requirements.
+                Compared the tools against real workflows to identify what Walmart's platform would need to support.
               </p>
             </div>
           </article>
@@ -153,8 +156,8 @@
               <h3>Economics</h3>
               <h4>Where does the delivery model make financial sense?</h4>
               <p>
-                Analyzed last-mile costs to understand the effect of order density and compare Local Fleet with 3P
-                delivery.
+                Compared last-mile costs and order density to understand where Local Fleet or 3P delivery made more
+                sense.
               </p>
             </div>
           </article>
@@ -185,8 +188,8 @@
             <p class="learning-label">Operations</p>
             <h2 id="scaling-learnings-title">The reference model couldn't simply be copied.</h2>
             <p>
-              The operating models shared constraints, but each format also had gaps shaped by its technology, customer
-              behavior, and local operating conditions.
+              The formats shared some constraints, but their workflows, tools, store workload, and local operating
+              conditions created important differences.
             </p>
             <img
               class="learning-visual-image"
@@ -197,17 +200,16 @@
 
           <article class="learning-card learning-technology">
             <p class="learning-label">Technology</p>
-            <h2>Standardization required more than feature parity.</h2>
+            <h2>The tools supported different ways of working.</h2>
             <p>
-              Instaleap gave pickers greater control over the order, while Walmart's workflow relied more heavily on
-              manual work, external communication, and operational handoffs.
+              Instaleap gave pickers more control within the workflow, while Walmart tools relied more on manual
+              handoffs, external communication, and approvals.
             </p>
             <img
               class="learning-visual-image"
               src="assets/scaling-technology-capability-gap.svg"
-              alt="Capability gap between Instaleap, with greater picker autonomy and in-app communication and approvals, and Walmart App, with more manual handoffs and WhatsApp and external approvals."
+              alt="Capability gap between Instaleap, with greater picker autonomy and in-app communication and approvals, and Walmart tools, with more manual handoffs and WhatsApp and external approvals."
             />
-            <p class="learning-note">The gaps were translated into a functional backlog for Walmart's app.</p>
           </article>
 
           <article class="learning-card learning-economics">
@@ -219,8 +221,8 @@
               alt="Target density of 7 to 9 orders versus 2 to 4 orders in lower-demand markets, resulting in higher cost per delivery."
             />
             <p>
-              When demand was lower, fewer orders had to absorb the cost of each Local Fleet route. 3P delivery offered
-              an alternative where costs were tied more directly to completed orders.
+              Lower-demand markets couldn't generate the order density needed to make Local Fleet equally efficient,
+              making 3P delivery a more viable alternative in some markets.
             </p>
           </article>
         </div>
@@ -242,12 +244,11 @@
               </svg>
             </span>
             <div>
-              <h2>E2E process model</h2>
+              <span class="change-output-label">Operations</span>
+              <h2>Operating model</h2>
               <p>Baseline for operational migration initiatives</p>
             </div>
           </article>
-
-          <span class="change-flow-arrow" aria-hidden="true">→</span>
 
           <article class="change-output change-output-capability">
             <span class="change-output-icon" aria-hidden="true">
@@ -259,12 +260,11 @@
               </svg>
             </span>
             <div>
-              <h2>Capability gaps</h2>
-              <p>Functional backlog for Walmart's app</p>
+              <span class="change-output-label">Technology</span>
+              <h2>Product requirements</h2>
+              <p>Functional backlog for Walmart tools</p>
             </div>
           </article>
-
-          <span class="change-flow-arrow" aria-hidden="true">→</span>
 
           <article class="change-output change-output-cost">
             <span class="change-output-icon" aria-hidden="true">
@@ -274,19 +274,22 @@
               </svg>
             </span>
             <div>
-              <h2>Cost analysis</h2>
+              <span class="change-output-label">Economics</span>
+              <h2>Delivery economics</h2>
               <p>Evidence for leadership's evaluation of the last-mile model</p>
             </div>
           </article>
         </div>
 
         <p class="change-summary">
-          Standardization required aligning the operating model, the technology supporting it, and its economics.
+          A common operating model wasn't something Walmart could simply copy across formats. It had to work
+          operationally, be supported by the technology, and make economic sense in each market.
         </p>
         <p class="change-note">
-          My involvement ended after the final presentation, so I don't attribute downstream implementation or business
-          outcomes to this work.
+          Scope note: My involvement concluded with the final recommendations, before downstream implementation.
         </p>
+
+        <a class="case-next-link" href="project-morralla.html">Next case → Store Cash Management</a>
       </section>
     </main>
   </body>
